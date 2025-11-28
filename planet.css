@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.garag {
+  height: 100vh;
+  background-image: url(./galaxy.webp);
+  background-size: cover;
+  background-position: center;
+}
+.solar-system {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#sun {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mercuryimg {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: mercuryPlanet 5.86s infinite linear;
+}
+
+@keyframes mercuryPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#mercury {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: mercury 8.8s linear infinite;
+}
+
+@keyframes mercury {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#venus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: venus 22.5s linear infinite;
+}
+@keyframes venus {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#venusimg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: venusPlanet 24.3s infinite linear;
+}
+@keyframes venusPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: earth 36.5s infinite linear;
+}
+@keyframes earth {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#earthimg {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: earthPlanet 1s infinite linear;
+}
+
+@keyframes earthPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#mars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: mars 68.7s infinite linear;
+}
+@keyframes mars {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#marsimg {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: marsPlanet 1.025s infinite linear;
+}
+@keyframes marsPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#jupiter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: jupiter 118.6s infinite linear;
+}
+@keyframes jupiter {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#jupiterimg {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: jupiterPlanet 0.41s infinite linear;
+}
+@keyframes jupiterPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#saturn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: saturn 294.6s infinite linear;
+}
+@keyframes saturn {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#saturnimg {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: saturnPlanet 0.445s infinite linear;
+}
+@keyframes saturnPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#uranus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: uranus 840s infinite linear;
+}
+@keyframes uranus {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#uranusimg {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: uranusPlanet 0.717s infinite linear;
+}
+@keyframes uranusPlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#neptune {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  height: 850px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: neptune 1648s infinite linear;
+}
+@keyframes neptune {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#neptuneimg {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  animation: neptunePlanet 0.671s infinite linear;
+}
+
+@keyframes neptunePlanet {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

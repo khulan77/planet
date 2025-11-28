@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 600px;
+  height: 600px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.rectangle {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  border: dashed 60px white;
+  animation: rect 10s infinite linear;
+  filter: drop-shadow(0 0 5px #00aaff) drop-shadow(0 0 10px #00aaff)
+    drop-shadow(0 0 15px #00aaff) drop-shadow(0 0 20px #00aaff);
+}
+@keyframes rect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rectangle0 {
+  position: absolute;
+  border-radius: 50%;
+  width: 340px;
+  height: 340px;
+  border: dashed 20px white;
+  animation: anime 0.3s infinite linear;
+  filter: drop-shadow(0 0 5px #00aaff) drop-shadow(0 0 10px #00aaff)
+    drop-shadow(0 0 15px #00aaff) drop-shadow(0 0 20px #00aaff);
+}
+@keyframes anime {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.rectangle1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: dashed 20px white;
+  animation: jijig 6s infinite linear;
+  filter: drop-shadow(0 0 4px #00aaff) drop-shadow(0 0 4px #00aaff)
+    drop-shadow(0 0 4px #00aaff) drop-shadow(0 0 4px #00aaff);
+}
+@keyframes jijig {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.whiteCircle {
+  background: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  animation: anna 5s infinite linear;
+}
+@keyframes anna {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
